@@ -1,0 +1,46 @@
+help
+
+info
+
+show
+
+add
+    aboba
+    1
+    2
+    12
+    12
+    HELICOPTER
+    ALCOHOL
+
+add
+    bebra
+    2
+    4
+    22
+    32
+    SUBMARINE
+    KEROSENE
+
+add
+    kek
+    4
+    5
+    54
+    62
+    MOTORCYCLE
+    GASOLINE
+
+show
+
+remove_last
+
+shuffle
+
+show
+
+group_counting_by_creation_date
+
+count_by_engine_power 12
+
+count_less_than_fuel_type GASOLINE
