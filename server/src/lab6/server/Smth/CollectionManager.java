@@ -1,5 +1,7 @@
 package lab6.server.Smth;
 
+import org.apache.logging.log4j.Logger;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.*;
@@ -19,21 +21,29 @@ public class CollectionManager {
 
     private final AtomicLong idSetter = new AtomicLong(1);
 
-    public CollectionManager(Vector<Vehicle> vehicles, FileM fileM) {
+    private final Logger logger;
+
+    public CollectionManager(Vector<Vehicle> vehicles, FileM fileM, Logger logger) {
         this.fileM = fileM;
         this.vehicles = vehicles;
+        this.logger = logger;
+
+        logger.info("Initializing " + this.getClass());
 
         if (vehicles.size() > 0) {
-            this.idSetter.set(vehicles.stream().max(Comparator.comparing(Vehicle::getId)).get().getId());
+            this.idSetter.set(vehicles.stream().max(Comparator.comparing(Vehicle::getId)).get().getId() + 1);
         }
+
+        logger.info("Current id is set to " + idSetter.get());
     }
 
     public void add(Vehicle vehicle) {
         while (vehicles.stream().anyMatch(v -> v.getId() == idSetter.get())) {
             idSetter.incrementAndGet();
         }
-
-        vehicles.add(vehicle.preparedForSaving(idSetter.getAndIncrement(), LocalDate.now()));
+        Vehicle newVehicle = vehicle.preparedForSaving(idSetter.getAndIncrement(), LocalDate.now());
+        vehicles.add(newVehicle);
+        logger.info("Vehicle " + newVehicle + " added");
     }
 
     public LocalDateTime getCreationDate() {
@@ -49,18 +59,23 @@ public class CollectionManager {
 
     public void clear() {
         vehicles.clear();
+        logger.info("Collection cleared");
     }
 
     public boolean remove_by_id(Long id) {
-        return vehicles.removeIf((v) -> v.getId() == id);
+        boolean result = vehicles.removeIf((v) -> v.getId() == id);
+        logger.info("Vehicle with id " + id + "removed");
+        return result;
     }
 
     public void save() {
         fileM.writeCSV(vehicles);
+        logger.info("Data saved");
     }
 
     public void Shuffle() {
         Collections.shuffle(vehicles);
+        logger.info("Collection shuffled");
     }
 
     public int size() {
@@ -82,23 +97,14 @@ public class CollectionManager {
     }
 
     public Map<LocalDate, Long> group_counting_by_creation_date() {
-        Map<LocalDate, Long> hashMap = vehicles.stream()
+        return vehicles.stream()
                 .collect(Collectors.groupingBy(Vehicle::getCreationDate, Collectors.counting()));
-        return hashMap;
     }
 
 
     public void remove_last() {
-        for (Iterator<Vehicle> iterator = vehicles.iterator(); iterator.hasNext(); ) {
-            Vehicle vehicle = iterator.next();
-            if (vehicle == vehicles.lastElement()) {
-                iterator.remove();
-            }
-
-        }
-
-
+        Vehicle last = vehicles.lastElement();
+        vehicles.remove(last);
+        logger.info("Last vehicle (id " + last.getId() + ") removed");
     }
-
-
 }

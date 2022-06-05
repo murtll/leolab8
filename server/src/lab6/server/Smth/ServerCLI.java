@@ -34,7 +34,6 @@ public class ServerCLI {
                 case "exit":
                     processor.stop();
                     collectionManager.save();
-                    System.out.println("Data saved");
                     System.exit(0);
                 case "help":
                     System.out.println("Lab6 help page\nhelp: display this text\nexit: stop the server\nsave: save data to file");

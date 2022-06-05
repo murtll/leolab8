@@ -1,5 +1,7 @@
 package lab6.server.Smth;
 
+import org.apache.logging.log4j.Logger;
+
 import java.io.*;
 import java.time.LocalDate;
 import java.util.Vector;
@@ -13,15 +15,19 @@ import java.util.Vector;
 public class FileM {
     public String line = "";
     private final String filename;
+    private final Logger logger;
 
-    public FileM(String filename) {
+    public FileM(String filename, Logger logger) {
         this.filename = filename;
+        this.logger = logger;
     }
 
     public Vector<Vehicle> readCSV() throws NumberFormatException {
         Vector<Vehicle> vehicles = new Vector<>();
-        try (
-                BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+
+        logger.info("Reading " + filename);
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             while ((line = reader.readLine()) != null) {
                 String[] row = line.split(",");
                 Coordinates coordinates = new Coordinates(
@@ -40,12 +46,12 @@ public class FileM {
                 try {
                     vehicles.add(vehicle);
                 } catch (NumberFormatException e) {
-                    System.out.println("Неверный формат");
+                    logger.error("Invalid format");
                 }
             }
 
         } catch (Exception e) {
-            System.out.println("Нет прав на чтение.Файла не существует");
+            logger.error("Cannot read " + filename);
         }
 
         return vehicles;
@@ -64,10 +70,11 @@ public class FileM {
             line += vehicle.getVehicleType().name() + ",";
             line += vehicle.getFuelType().name() + "\n";
         });
+        logger.info("Writing to " + filename);
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
             writer.write(line);
         } catch (Exception e) {
-            System.out.println("Нет прав на чтение.Файла не существует");
+            logger.error("Cannot write to" + filename);
         }
 
     }

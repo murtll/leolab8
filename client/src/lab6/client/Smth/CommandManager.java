@@ -1,13 +1,11 @@
 package lab6.client.Smth;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lab6.client.Network.ServerResponseDto;
 
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Map;
 import java.util.Vector;
-import java.util.function.Consumer;
 
 /**
  * a class that provides access to the commands

@@ -2,6 +2,7 @@ package lab6.server.Network;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -13,12 +14,14 @@ import java.nio.charset.StandardCharsets;
 public class DatagramServer {
     private final DatagramSocket socket;
     private final ObjectMapper mapper;
+    private final Logger logger;
 
-    public DatagramServer(int port) throws SocketException {
+    public DatagramServer(int port, Logger logger) throws SocketException {
         this.socket = new DatagramSocket(port);
         this.mapper = new ObjectMapper();
         this.mapper.setSerializationInclusion(JsonInclude.Include.NON_DEFAULT);
         this.mapper.findAndRegisterModules();
+        this.logger = logger;
     }
 
     public ClientRequestDto receive() throws IOException {
@@ -27,7 +30,7 @@ public class DatagramServer {
         socket.receive(packet);
 
         String data = new String(packet.getData(), 0, packet.getLength(), StandardCharsets.UTF_8);
-        System.out.println("Packet from " + packet.getAddress() + ":" + packet.getPort() + " payload - " + data);
+        logger.info("Received packet from " + packet.getAddress() + ":" + packet.getPort() + ", payload " + data);
 
         ClientDataDto clientData = mapper.readValue(data, ClientDataDto.class);
         return new ClientRequestDto(packet.getAddress(), packet.getPort(), clientData);
@@ -39,6 +42,8 @@ public class DatagramServer {
         byte[] buf = response.getBytes(StandardCharsets.UTF_8);
 
         DatagramPacket packet = new DatagramPacket(buf, buf.length, ip, port);
+
+        logger.info("Sending packet to " + ip + ":" + port + ", payload " + response);
 
         socket.send(packet);
     }
