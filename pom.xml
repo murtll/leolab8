@@ -47,6 +47,13 @@
       <version>2.17.1</version>
     </dependency>
 
+    <!--  For interactiong with DB via JDBC  -->
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.3.3</version>
+    </dependency>
+
   </dependencies>
 
   <build>

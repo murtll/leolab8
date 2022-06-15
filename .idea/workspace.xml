@@ -5,26 +5,167 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0641c49-8c71-4d9f-9798-488605451d6f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Network/ClientMetaDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Network/ClientRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/CredentialAsk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/lab7/server/Exceptions/EmptyResultSetException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/lab7/server/Exceptions/InvalidCredentialsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/lab7/server/Network/ClientMetaDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/AuthenticationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/AuthorizationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/ConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/DatabaseManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/DatabaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/DatabaseWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/Hasher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Smth/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab6/client/Smth/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Enum/FuelType.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Enum/FuelType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Enum/VehicleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Enum/VehicleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Exceptions/WrongFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Exceptions/WrongFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Network/ClientDataDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Network/ClientDataDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Network/DatagramClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Network/DatagramClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Network/ServerResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Network/ServerResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Smth/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Smth/Commander.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/Commander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Smth/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Smth/EmptyIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/EmptyIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Smth/FileM.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/FileM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Smth/FuelType.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/FuelType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Smth/InputChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/InputChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Smth/ServerCommander.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/ServerCommander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Smth/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Smth/VehicleAsk.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/VehicleAsk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab6/client/Smth/VehicleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/VehicleType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Add.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Clear.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Clear.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Count_by_engine_power.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Count_by_engine_power.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Count_less_than_fuel_type.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Count_less_than_fuel_type.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Execute.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Execute.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Exit.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Exit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Group_counting_by_creation_date.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Group_counting_by_creation_date.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Help.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Help.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Info.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Remove_by_id.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Remove_by_id.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Remove_last.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Remove_last.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Save.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Save.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Show.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Shuffle.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Shuffle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Update.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Add.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Clear.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Clear.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Count_by_engine_power.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Count_by_engine_power.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Count_less_than_fuel_type.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Count_less_than_fuel_type.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Group_counting_by_creation_date.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Group_counting_by_creation_date.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Help.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Help.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Info.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Remove_by_id.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Remove_by_id.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Remove_last.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Remove_last.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Show.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Shuffle.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Shuffle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Update.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/class-use/Update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Exceptions/WrongFormat.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Exceptions/WrongFormat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Exceptions/class-use/WrongFormat.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Exceptions/class-use/WrongFormat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Intefaces/class-use/Commands.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Intefaces/class-use/Commands.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/AbstrCommand.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/AbstrCommand.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/CollectionManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/CollectionManager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/CommanManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/CommanManager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/Commander.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/Commander.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/Coordinates.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/Coordinates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/EmptyIO.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/EmptyIO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/FileM.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/FileM.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/FuelType.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/FuelType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/InputChecker.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/InputChecker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/Vehicle.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/Vehicle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/VehicleType.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/VehicleType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/AbstrCommand.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/AbstrCommand.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/CollectionManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/CollectionManager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/CommanManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/CommanManager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/Commander.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/Commander.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/Coordinates.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/Coordinates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/EmptyIO.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/EmptyIO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/FileM.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/FileM.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/FuelType.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/FuelType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/InputChecker.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/InputChecker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/Vehicle.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/Vehicle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/VehicleAsk.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/VehicleAsk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/VehicleType.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/VehicleType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/class-use/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/class-use/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/serialized-form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab6/server/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Network/DatagramServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab6/server/Network/DatagramServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab6/server/Smth/CollectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab6/server/Smth/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/CommandProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab6/server/Smth/CommandProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/FileM.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab6/server/Smth/FileM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/ServerCLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab6/server/Smth/ServerCLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Smth/CommandManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/production/client/lab6/client/Smth/CommandManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/production/server/lab6/server/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Network/DatagramServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/production/server/lab6/server/Network/DatagramServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/CollectionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/CollectionManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/CommandManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/CommandManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/CommandProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/CommandProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/FileM.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/FileM.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/ServerCLI.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/ServerCLI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Commands/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Clear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Commands/Count_by_engine_power.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Count_by_engine_power.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Commands/Count_less_than_fuel_type.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Count_less_than_fuel_type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Commands/Group_counting_by_creation_date.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Group_counting_by_creation_date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Commands/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Commands/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Commands/Remove_by_id.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Remove_by_id.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Commands/Remove_last.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Remove_last.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Commands/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Commands/Shuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Shuffle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Commands/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Update.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Enum/FuelType.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Enum/FuelType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Enum/VehicleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Enum/VehicleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Exceptions/WrongFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Exceptions/WrongFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Intefaces/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Intefaces/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Network/ClientDataDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Network/ClientDataDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Network/ClientRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Network/ClientRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Network/DatagramServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Network/DatagramServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Network/ServerResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Network/ServerResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/AbstrCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/AbstrCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/CollectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/CommandProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/RequestProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/CommandValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/CommandValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/Commander.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/Commander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/EmptyIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/EmptyIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/FileM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/FuelType.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/FuelType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/InputChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/InputChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/ServerCLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/ServerCLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab6/server/Smth/VehicleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/VehicleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Commands/Add.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Commands/Clear.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Commands/Count_by_engine_power.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Commands/Count_less_than_fuel_type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Commands/Group_counting_by_creation_date.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Commands/Help.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Commands/Info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Commands/Remove_by_id.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Commands/Remove_last.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Commands/Show.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Commands/Shuffle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Commands/Update.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Exceptions/WrongFormat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Intefaces/Commands.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Network/ClientDataDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Network/ClientRequestDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Network/DatagramServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Network/ServerResponseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/AbstrCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/CollectionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/CommandManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/CommandProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/CommandValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/Commander.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/Coordinates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/EmptyIO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/FileM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/FuelType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/InputChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/ServerCLI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/server/lab6/server/Smth/VehicleType.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.lbs" beforeDir="false" afterPath="$PROJECT_DIR$/test.lbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,24 +196,32 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
     "jdk.selected.JAVA_MODULE": "corretto-1.8",
-    "last_opened_file_path": "/Users/koiv/kek/lab6/client/src",
+    "last_opened_file_path": "/Users/koiv/kek/lab7/client/src/lab7/client/Network",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.keymap"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/lab7/client/Network" />
       <recent name="$PROJECT_DIR$/client/src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lab7.server.Exceptions" />
       <recent name="lab6.server.Network" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.client">
+  <component name="RunManager" selected="Application.client (1)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab5.Main" />
       <module name="Laabka" />
@@ -94,10 +243,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="client" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lab6.client.Main" />
+    <configuration name="client (1)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="lab7.client.Main" />
       <module name="client" />
-      <option name="PROGRAM_PARAMETERS" value="test.csv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab6.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="client" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lab7.client.Main" />
+      <module name="client" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lab6.server.*" />
@@ -111,10 +272,14 @@
     <configuration name="server" type="Application" factoryName="Application" temporary="true">
       <envs>
         <env name="SERVER_PORT" value="8080" />
+        <env name="PG_HOST" value="localhost" />
+        <env name="PG_PORT" value="5432" />
+        <env name="PG_USER" value="s340430" />
+        <env name="PG_PASS" value="dkv989" />
+        <env name="PG_DB" value="studs" />
       </envs>
-      <option name="MAIN_CLASS_NAME" value="lab6.server.Main" />
+      <option name="MAIN_CLASS_NAME" value="lab7.server.Main" />
       <module name="server" />
-      <option name="PROGRAM_PARAMETERS" value="test.csv" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lab6.server.*" />
@@ -126,6 +291,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.client (1)" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.client" />
@@ -150,6 +316,8 @@
       <updated>1654338859685</updated>
       <workItem from="1654338864447" duration="1339000" />
       <workItem from="1654340350948" duration="57345000" />
+      <workItem from="1655212668347" duration="26272000" />
+      <workItem from="1655313509293" duration="11566000" />
     </task>
     <servers />
   </component>
