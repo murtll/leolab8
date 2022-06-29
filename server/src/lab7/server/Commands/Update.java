@@ -1,5 +1,7 @@
 package lab7.server.Commands;
 
+import lab7.server.Db.DatabaseManager;
+import lab7.server.Entity.Vehicle;
 import lab7.server.Network.ServerResponseDto;
 import lab7.server.Smth.*;
 

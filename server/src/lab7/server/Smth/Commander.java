@@ -2,6 +2,7 @@ package lab7.server.Smth;
 
 import lab7.server.Network.ClientDataDto;
 import lab7.server.Network.ServerResponseDto;
+import lab7.server.Security.CommandValidator;
 
 /**
  * class with interactive mode and script mode

@@ -4,7 +4,161 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0641c49-8c71-4d9f-9798-488605451d6f" name="Changes" comment="" />
+    <list default="true" id="c0641c49-8c71-4d9f-9798-488605451d6f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/resources/back-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/resources/car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/resources/left-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/resources/localization/dictionary_el_GR.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/resources/localization/dictionary_es_ES.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/resources/localization/dictionary_nl_NL.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/resources/localization/dictionary_ru_RU.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/resources/map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/resources/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Di/DependencyBag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Locale/AbstractLocalizableDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Locale/AbstractLocalizableFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Locale/LocaleBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Locale/Localizable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Locale/LocalizableButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Locale/LocalizableLabel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Locale/Localizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Network/Events/EventDataDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Network/Events/EventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Network/Events/EventType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Network/Events/Notifiable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/CredentialHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/AddVehicleDialog.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/AddVehicleDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/EnterListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/GroupByDateDialog.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/GroupByDateDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/GroupByDateTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/LocalizationEventBus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/LoginForm.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/LoginForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/MainPage.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/MainUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/PickColorDialog.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/PickColorDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/RegisterForm.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/RegisterForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/ServerConfigForm.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/ServerConfigForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/VehicleTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/VehicleViewDialog.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lab7/client/Ui/VehicleViewDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/lab7/server/Network/Events/EventDataDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/lab7/server/Network/Events/EventSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/lab7/server/Network/Events/EventType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/356deea5-a640-474f-95df-bd50b96060df.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/356deea5-a640-474f-95df-bd50b96060df.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/356deea5-a640-474f-95df-bd50b96060df/storage_v2/_src_/database/studs.ww2LBg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/356deea5-a640-474f-95df-bd50b96060df/storage_v2/_src_/database/studs.ww2LBg/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Enum/FuelType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Enum/VehicleType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Network/ClientDataDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Network/ClientDataDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Network/ClientMetaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Network/ClientMetaDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Network/DatagramClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Network/DatagramClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Network/ServerResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Network/ServerResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Smth/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Smth/Commander.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/Commander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Smth/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Entity/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Smth/CredentialAsk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Smth/EmptyIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Exceptions/EmptyIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Smth/FileM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Smth/FuelType.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Entity/FuelType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Smth/ServerCommander.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/ServerCommander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Smth/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Entity/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Smth/VehicleAsk.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Smth/VehicleAsk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/lab7/client/Smth/VehicleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lab7/client/Entity/VehicleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Add.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Clear.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Clear.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Count_by_engine_power.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Count_by_engine_power.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Count_less_than_fuel_type.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Count_less_than_fuel_type.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Execute.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Execute.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Exit.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Exit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Group_counting_by_creation_date.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Group_counting_by_creation_date.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Help.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Help.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Info.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Remove_by_id.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Remove_by_id.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Remove_last.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Remove_last.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Save.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Save.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Show.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Shuffle.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Shuffle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Update.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Commands/Update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Intefaces/class-use/Commands.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Intefaces/class-use/Commands.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/AbstrCommand.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/AbstrCommand.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/Coordinates.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/Coordinates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/EmptyIO.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/EmptyIO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/FuelType.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/FuelType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/Vehicle.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/Vehicle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/VehicleType.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/VehicleType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/AbstrCommand.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/AbstrCommand.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/Coordinates.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/Coordinates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/EmptyIO.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/EmptyIO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/FuelType.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/FuelType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/Vehicle.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/Vehicle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/VehicleType.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/lab5/Smth/class-use/VehicleType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/javadocumentary/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/javadocumentary/serialized-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Commands/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Clear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Commands/Count_by_engine_power.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Count_by_engine_power.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Commands/Count_less_than_fuel_type.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Count_less_than_fuel_type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Commands/Group_counting_by_creation_date.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Group_counting_by_creation_date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Commands/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Commands/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Commands/Remove_by_id.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Remove_by_id.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Commands/Remove_last.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Remove_last.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Commands/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Commands/Shuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Shuffle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Commands/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Update.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Intefaces/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Network/ClientDataDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Network/ClientDataDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Network/ClientMetaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Network/ClientMetaDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Network/DatagramServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Network/DatagramServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Network/ServerResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Network/ServerResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/AbstrCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Commands/AbstrCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/AuthenticationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Security/AuthenticationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/AuthorizationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Security/AuthorizationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/CollectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/CommandValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Security/CommandValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/Commander.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/Commander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Db/ConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Entity/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Db/DatabaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/DatabaseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Db/DatabaseResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/DatabaseWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Db/DatabaseWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/EmptyIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Exceptions/EmptyIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/FuelType.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Entity/FuelType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/Hasher.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Security/Hasher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/RequestProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Smth/RequestProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Entity/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lab7/server/Smth/VehicleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lab7/server/Entity/VehicleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Exceptions/WrongFormat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Network/ClientDataDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Network/DatagramClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Network/ServerResponseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Smth/CommandManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Smth/Commander.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Smth/Coordinates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Smth/EmptyIO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Smth/FileM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Smth/FuelType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Smth/InputChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Smth/ServerCommander.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Smth/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Smth/VehicleAsk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/production/client/lab6/client/Smth/VehicleType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.lbs" beforeDir="false" afterPath="$PROJECT_DIR$/test.lbs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +167,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="XML Properties File" />
         <option value="Class" />
+        <option value="Enum" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -23,25 +180,36 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2A6nMzF9p0QVpb0NMoJqoBu84NW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "extract.method.default.visibility": "private",
     "jdk.selected.JAVA_MODULE": "corretto-1.8",
-    "last_opened_file_path": "/Users/koiv/kek/lab7/client/src/lab7/client/Network",
+    "last_opened_file_path": "/Users/koiv/kek/lab8/server/src/lab7/server/Network",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap"
+    "settings.editor.selected.configurable": "File.Encoding"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -51,22 +219,25 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/src/lab7/server/Network" />
+      <recent name="$PROJECT_DIR$/client/src/lab7/client/Smth" />
+      <recent name="$PROJECT_DIR$/client/src/lab7/client/Ui" />
+      <recent name="$PROJECT_DIR$/client/resources/localization" />
       <recent name="$PROJECT_DIR$/client/src/lab7/client/Network" />
-      <recent name="$PROJECT_DIR$/client/src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lab7.client.Locale" />
       <recent name="lab7.server.Exceptions" />
       <recent name="lab6.server.Network" />
     </key>
   </component>
   <component name="RunManager" selected="Application.client (1)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab5.Main" />
-      <module name="Laabka" />
-      <option name="PROGRAM_PARAMETERS" value="test.csv" />
+      <option name="MAIN_CLASS_NAME" value="lab7.client.Main" />
+      <module name="client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lab6.server.*" />
+          <option name="PATTERN" value="lab7.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,16 +245,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <module name="client" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="client (1)" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="lab7.client.Main" />
+      <option name="MAIN_CLASS_NAME" value="lab7.client.Ui.MainUI" />
       <module name="client" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/client" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lab6.server.*" />
@@ -95,11 +260,25 @@
       </method>
     </configuration>
     <configuration name="client" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lab7.client.Main" />
+      <option name="MAIN_CLASS_NAME" value="lab7.client.Ui.MainUI" />
       <module name="client" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/client" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lab6.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lab7.client.Ui.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab7.client.Ui.Test" />
+      <module name="client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab7.client.Locale.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,6 +297,7 @@
       </envs>
       <option name="MAIN_CLASS_NAME" value="lab7.server.Main" />
       <module name="server" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lab6.server.*" />
@@ -130,17 +310,17 @@
     </configuration>
     <list>
       <item itemvalue="Application.client (1)" />
+      <item itemvalue="Application.lab7.client.Ui.Test" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Test" />
       <item itemvalue="Application.client" />
       <item itemvalue="Application.server" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.server" />
         <item itemvalue="Application.client" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.server" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.lab7.client.Ui.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -156,6 +336,21 @@
       <workItem from="1654340350948" duration="57345000" />
       <workItem from="1655212668347" duration="26272000" />
       <workItem from="1655313509293" duration="11911000" />
+      <workItem from="1655634657939" duration="17938000" />
+      <workItem from="1655662151692" duration="5928000" />
+      <workItem from="1656002336052" duration="14029000" />
+      <workItem from="1656016401859" duration="6885000" />
+      <workItem from="1656023308043" duration="8280000" />
+      <workItem from="1656086600424" duration="11001000" />
+      <workItem from="1656098660949" duration="4446000" />
+      <workItem from="1656103120613" duration="2815000" />
+      <workItem from="1656159576679" duration="17396000" />
+      <workItem from="1656195201906" duration="17000" />
+      <workItem from="1656246351058" duration="25746000" />
+      <workItem from="1656481416386" duration="565000" />
+      <workItem from="1656482088358" duration="6848000" />
+      <workItem from="1656492625060" duration="28000" />
+      <workItem from="1656492668703" duration="36394000" />
     </task>
     <servers />
   </component>
@@ -172,5 +367,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -47,7 +47,7 @@ public class Commander {
         historyRecord.addLast(s);
     }
 
-    private static void scriptMode(String fileName) {
+    public static String scriptMode(String fileName) {
 
         File scriptFile = new File(fileName.trim());
         System.out.println("Executing script file " + scriptFile.getAbsolutePath());
@@ -58,7 +58,7 @@ public class Commander {
             fileScanner = new Scanner(scriptFile);
         } catch (FileNotFoundException e) {
             System.out.println("Этот скрипт файл не существует. Пожалуйста проверьте путь!");
-            return;
+            return "";
         }
 
         int lineCounter = 0;
@@ -79,147 +79,75 @@ public class Commander {
                 continue;
             }
 
-            categorizeCommand(userCommand, true);
+            String response = categorizeCommand(userCommand, true);
+            if (response.equals("invalid_arguments_number") ||
+                    response.equals("network_error") ||
+                    response.equals("error") ||
+                    response.equals("not_allowed_in_script") ||
+                    response.equals("unknown_command")) {
+                return response;
+            }
 
             System.out.println("------------");
         }
         VehicleAsk.setScanner(userScanner);
+        return "success";
     }
 
 
-    private static void categorizeCommand(String[] userCommand, boolean fromScript) {
+    private static String categorizeCommand(String[] userCommand, boolean fromScript) {
         switch (userCommand[0]) {
-            case "execute":
-                if (fromScript) {
-                    System.out.println("Рекурсия недопустима!");
-                } else if (userCommand.length != 1) {
-                    scriptMode(userCommand[1]);
-                } else {
-                    System.out.println("Пожалуйста внесите script_file!");
-                }
-                break;
-            case "help":
-                if (userCommand.length == 1) {
-                    System.out.println(CommandManager.help());
-                } else {
-                    System.out.println("Это команда не поддерживает данный аргумент");
-                }
-                break;
-            case "info":
-                if (userCommand.length == 1) {
-                    System.out.println(CommandManager.info());
-                } else {
-                    System.out.println("Это команда не поддерживает данный аргумент");
-                }
-                break;
-            case "show":
-                if (userCommand.length == 1) {
-                    System.out.println(CommandManager.show());
-                } else {
-                    System.out.println("Это команда не поддерживает данный аргумент");
-                }
-                break;
-            case "show_my":
-                if (userCommand.length == 1) {
-                    System.out.println(CommandManager.showMy());
-                } else {
-                    System.out.println("Это команда не поддерживает данный аргумент");
-                }
-                break;
             case "add":
                 if (userCommand.length == 1) {
-                    System.out.println(CommandManager.add());
+                    return CommandManager.add();
                 } else {
-                    System.out.println("Чтобы добавить транспорт, вы должны ввести название команды 'add' !");
+                    return "invalid_arguments_number";
                 }
-                break;
             case "clear":
                 if (userCommand.length == 1) {
-                    System.out.println(CommandManager.clear());
+                    return CommandManager.clear();
                 } else {
-                    System.out.println("Это команда не поддерживает данный аргумент");
+                    return "invalid_arguments_number";
                 }
-                break;
-            case "exit":
-                if (userCommand.length == 1) {
-                    System.exit(0);
-                }
-                System.out.println("Это команда не поддерживает данный аргумент");
-                break;
-            case "history":
-                if (userCommand.length == 1) {
-                    for (String cm : historyRecord) {
-                        System.out.println(cm);
-                    }
-                } else {
-                    System.out.println("Это команда не поддерживает данный аргумент");
-                }
-                break;
             case "update":
                 if (userCommand.length == 2) {
-                    System.out.println(CommandManager.updateId(userCommand[1]));
+                    return CommandManager.updateId(userCommand[1]);
                 } else {
-                    System.out.println("Пожалуйста введите Id и команду в одной линии");
+                    return "invalid_arguments_number";
                 }
-                break;
-            case "count_less_than_fuel_type":
-                if (userCommand.length == 2) {
-                    System.out.println(CommandManager.countLessThanFuelType(userCommand[1]));
-                } else {
-                    System.out.println("Пожалуйста введите тип топлива и команду в одной линии");
-                }
-                break;
             case "remove_by_id":
                 if (userCommand.length == 2) {
-                    System.out.println(CommandManager.removeById(userCommand[1]));
+                    return CommandManager.removeById(userCommand[1]);
                 } else {
-                    System.out.println("Пожалуйста введите Id и команду в одной линии");
+                    return "invalid_arguments_number";
                 }
-                break;
-            case "count_by_engine_power":
-                if (userCommand.length == 2) {
-                    System.out.println(CommandManager.countByEnginePower(userCommand[1]));
-                } else {
-                    System.out.println("Пожалуйста введите Id и команду в одной линии");
-                }
-                break;
-            case "group_counting_by_creation_date":
-                if (userCommand.length == 1) {
-                    System.out.println(CommandManager.groupCountingByCreationDate());
-                } else {
-                    System.out.println("Это команда не поддерживает данный аргумент");
-                }
-                break;
             case "shuffle":
                 if (userCommand.length == 1) {
-                    System.out.println(CommandManager.shuffle());
+                    return CommandManager.shuffle();
                 } else {
-                    System.out.println("Это команда не поддерживает данный аргумент");
+                    System.out.println("invalid_arguments_number");
                 }
-                break;
             case "remove_last":
                 if (userCommand.length == 1) {
-                    System.out.println(CommandManager.removeLast());
+                    return CommandManager.removeLast();
                 } else {
-                    System.out.println("Это команда не поддерживает данный аргумент");
+                    System.out.println("invalid_arguments_number");
                 }
-                break;
+            case "execute":
+            case "help":
+            case "info":
+            case "show":
+            case "show_my":
+            case "exit":
+            case "history":
+            case "count_less_than_fuel_type":
             case "login":
-                if (userCommand.length == 1) {
-                    System.out.println(CommandManager.login());
-                } else {
-                    System.out.println("Это команда не поддерживает данный аргумент");
-                }
-                break;
             case "register":
-                if (userCommand.length == 1) {
-                    System.out.println(CommandManager.register());
-                } else {
-                    System.out.println("Это команда не поддерживает данный аргумент");
-                }
-                break;
+            case "count_by_engine_power":
+            case "group_counting_by_creation_date":
+                return "not_allowed_in_script";
             default:
-                System.out.println("Unknown command!");
+                return "unknown_command";
         }
     }
 }

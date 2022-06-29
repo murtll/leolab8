@@ -1,9 +1,8 @@
 package lab7.server.Commands;
 
 import lab7.server.Network.ServerResponseDto;
-import lab7.server.Smth.AbstrCommand;
 import lab7.server.Smth.CollectionManager;
-import lab7.server.Smth.FuelType;
+import lab7.server.Entity.FuelType;
 
 
 /**

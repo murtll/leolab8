@@ -1,6 +1,8 @@
 package lab7.server.Smth;
 
-import lab7.server.Intefaces.Commands;
+import lab7.server.Entity.FuelType;
+import lab7.server.Entity.Vehicle;
+import lab7.server.Commands.Commands;
 import lab7.server.Network.ServerResponseDto;
 
 

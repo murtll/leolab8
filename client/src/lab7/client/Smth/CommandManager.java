@@ -1,6 +1,8 @@
 package lab7.client.Smth;
 
-import lab7.client.Network.ClientMetaDto;
+import lab7.client.Di.DependencyBag;
+import lab7.client.Entity.FuelType;
+import lab7.client.Entity.Vehicle;
 import lab7.client.Network.ServerResponseDto;
 
 import java.io.IOException;
@@ -16,22 +18,12 @@ import java.util.Vector;
 
 public class CommandManager {
 
-    private static ServerCommander serverCommander;
-
-    private static VehicleAsk vehicleAsk;
+    private static final ServerCommander serverCommander = DependencyBag.getSingleton(ServerCommander.class);
 
     private static InputChecker ic;
 
     public static void setIc(InputChecker ic) {
         CommandManager.ic = ic;
-    }
-
-    public static void setServerCommander(ServerCommander commander) {
-        CommandManager.serverCommander = commander;
-    }
-
-    public static void setVehicleAsk(VehicleAsk vehicleAsk) {
-        CommandManager.vehicleAsk = vehicleAsk;
     }
 
     public static String help() {
@@ -50,9 +42,8 @@ public class CommandManager {
     }
 
     public static String login() {
-        ClientMetaDto meta = CredentialAsk.askMeta();
         try {
-            ServerResponseDto result = serverCommander.login(meta);
+            ServerResponseDto result = serverCommander.login();
             if (result.isOk()) {
                 return result.getMessage();
             } else {
@@ -66,9 +57,8 @@ public class CommandManager {
     }
 
     public static String register() {
-        ClientMetaDto meta = CredentialAsk.askMeta();
         try {
-            ServerResponseDto result = serverCommander.register(meta);
+            ServerResponseDto result = serverCommander.register();
             if (result.isOk()) {
                 return result.getMessage();
             } else {
@@ -109,107 +99,75 @@ public class CommandManager {
     }
 
     public static String add() {
-        Vehicle v = vehicleAsk.createVehicle();
+        Vehicle v = VehicleAsk.createVehicle();
 
         try {
             ServerResponseDto result = serverCommander.add(v);
-            if (result.isOk()) {
-                return result.getMessage();
-            } else {
-                return resolveErrors(result);
-            }
+            return result.getMessage();
         } catch (IOException e) {
-            return "Ошибка передачи данных";
+            return "network_error";
         } catch (Exception e) {
-            return "Ошибка";
+            return "error";
         }
     }
 
     public static String updateId(String s) {
-        if (!ic.longValidCheck(s, 0L, Long.MAX_VALUE)) {
-            return "The inserting ID is not in valid range! Please insert Id greater than 0!";
-        }
-
         long id = Long.parseLong(s);
-        Vehicle v = vehicleAsk.createVehicle();
+        Vehicle v = VehicleAsk.createVehicle();
 
         try {
             ServerResponseDto result = serverCommander.updateId(id, v);
-            if (result.isOk()) {
-                return result.getMessage();
-            } else {
-                return resolveErrors(result);
-            }
+            return result.getMessage();
         } catch (IOException e) {
-            return "Ошибка передачи данных";
+            return "network_error";
         } catch (Exception e) {
-            return "Ошибка";
+            return "error";
         }
     }
 
     public static String removeById(String s) {
-        if (!ic.longValidCheck(s, 0L, Long.MAX_VALUE)) {
-            return "The inserting ID is not in valid range! Please insert Id greater than 0!";
-        }
-
         long id = Long.parseLong(s);
 
         try {
             ServerResponseDto result = serverCommander.removeById(id);
-            if (result.isOk()) {
-                return result.getMessage();
-            } else {
-                return resolveErrors(result);
-            }
+            return result.getMessage();
         } catch (IOException e) {
-            return "Ошибка передачи данных";
+            return "network_error";
         } catch (Exception e) {
-            return "Ошибка";
+            return "error";
         }
     }
 
     public static String clear() {
         try {
             ServerResponseDto result = serverCommander.clear();
-            if (result.isOk()) {
-                return result.getMessage();
-            } else {
-                return resolveErrors(result);
-            }
+            return result.getMessage();
         } catch (IOException e) {
-            return "Ошибка передачи данных";
+            return "network_error";
         } catch (Exception e) {
-            return "Ошибка";
+            return "error";
         }
     }
 
     public static String removeLast() {
         try {
             ServerResponseDto result = serverCommander.removeLast();
-            if (result.isOk()) {
-                return result.getMessage();
-            } else {
-                return resolveErrors(result);
-            }
+            return result.getMessage();
         } catch (IOException e) {
-            return "Ошибка передачи данных";
+            return "network_error";
         } catch (Exception e) {
-            return "Ошибка";
+            return "error";
         }
     }
 
     public static String shuffle() {
         try {
             ServerResponseDto result = serverCommander.shuffle();
-            if (result.isOk()) {
-                return result.getMessage();
-            } else {
-                return resolveErrors(result);
-            }
+            return result.getMessage();
         } catch (IOException e) {
-            return "Ошибка передачи данных";
+            return "network_error";
         } catch (Exception e) {
-            return "Ошибка";
+            return "error";
         }
     }
 

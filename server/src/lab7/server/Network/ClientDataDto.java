@@ -1,7 +1,7 @@
 package lab7.server.Network;
 
-import lab7.server.Smth.FuelType;
-import lab7.server.Smth.Vehicle;
+import lab7.server.Entity.FuelType;
+import lab7.server.Entity.Vehicle;
 
 public class ClientDataDto {
     private final String command;

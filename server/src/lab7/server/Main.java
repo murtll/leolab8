@@ -1,7 +1,12 @@
 package lab7.server;
 
 import lab7.server.Commands.*;
+import lab7.server.Db.DatabaseManager;
+import lab7.server.Entity.Vehicle;
 import lab7.server.Network.DatagramServer;
+import lab7.server.Network.Events.EventSender;
+import lab7.server.Security.AuthenticationManager;
+import lab7.server.Security.AuthorizationManager;
 import lab7.server.Smth.*;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -33,11 +38,11 @@ public class Main {
                 System.exit(0);
             }
 
-            System.out.println(" _       _   _____\n" +
-                    "| | __ _| |_|___  |\n" +
-                    "| |/ _` | '_ \\ / /\n" +
-                    "| | (_| | |_) / /\n" +
-                    "|_|\\__,_|_.__/_/");
+            System.out.println(" _       _      ___  \n" +
+                    "| | __ _| |__  ( _ ) \n" +
+                    "| |/ _` | '_ \\ / _ \\ \n" +
+                    "| | (_| | |_) | (_) |\n" +
+                    "|_|\\__,_|_.__/ \\___/ \n");
 
 
             boolean migrate = args.length == 1 && args[0].equals("migrate");
@@ -65,9 +70,10 @@ public class Main {
             AuthenticationManager authenticationManager = new AuthenticationManager(databaseManager, logger);
             AuthorizationManager authorizationManager = new AuthorizationManager(databaseManager, logger);
 
-            processor = new RequestProcessor(logger, authenticationManager, authorizationManager);
 
             final int serverPort = Integer.parseInt(System.getenv("SERVER_PORT"));
+            EventSender eventSender = new EventSender(serverPort);
+            processor = new RequestProcessor(logger, authenticationManager, authorizationManager, eventSender);
             server = new DatagramServer(serverPort, logger, processor);
 
             server.start();

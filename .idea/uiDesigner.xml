@@ -120,5 +120,27 @@
         <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
       </item>
     </group>
+    <group name="localizable">
+      <item class="lab7.client.Locale.LocaleBox" icon="/com/intellij/uiDesigner/icons/comboBox.svg" removable="true" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="0" />
+      </item>
+      <item class="lab7.client.Locale.LocalizableButton" icon="/com/intellij/uiDesigner/icons/button.svg" removable="true" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="0" />
+      </item>
+      <item class="lab7.client.Locale.LocalizableLabel" icon="/com/intellij/uiDesigner/icons/label.svg" removable="true" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="0" />
+      </item>
+    </group>
+    <group name="custom">
+      <item class="lab7.client.Ui.VehicleTable" icon="/com/intellij/uiDesigner/icons/table.svg" removable="true" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="0" />
+      </item>
+      <item class="javax.swing.JColorChooser" icon="" removable="true" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="0" />
+      </item>
+      <item class="lab7.client.Ui.DrawingPanel" icon="/com/intellij/uiDesigner/icons/panel.svg" removable="true" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="0" />
+      </item>
+    </group>
   </component>
 </project>

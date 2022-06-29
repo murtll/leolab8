@@ -1,6 +1,8 @@
 package lab7.client.Smth;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lab7.client.Entity.FuelType;
+import lab7.client.Entity.Vehicle;
 import lab7.client.Network.*;
 
 import java.io.IOException;
@@ -17,8 +19,6 @@ public class ServerCommander {
 
     private final DatagramClient client;
     private final ObjectMapper mapper;
-
-    private ClientMetaDto meta = null;
 
     public ServerCommander(DatagramClient client) {
         this.client = client;
@@ -42,15 +42,13 @@ public class ServerCommander {
         return sendDtoAndReceiveResponse(clientData);
     }
 
-    public ServerResponseDto login(ClientMetaDto meta) throws IOException, InterruptedException {
+    public ServerResponseDto login() throws IOException, InterruptedException {
         ClientDataDto clientData = new ClientDataDto("login");
-        this.meta = meta;
         return sendDtoAndReceiveResponse(clientData);
     }
 
-    public ServerResponseDto register(ClientMetaDto meta) throws IOException, InterruptedException {
+    public ServerResponseDto register() throws IOException, InterruptedException {
         ClientDataDto clientData = new ClientDataDto("register");
-        this.meta = meta;
         return sendDtoAndReceiveResponse(clientData);
     }
 
@@ -101,13 +99,12 @@ public class ServerCommander {
     }
 
     private ServerResponseDto sendDtoAndReceiveResponse(ClientDataDto clientData) throws IOException, InterruptedException {
-        ClientRequestDto requestDto = new ClientRequestDto(clientData, this.meta);
+        ClientRequestDto requestDto = new ClientRequestDto(clientData, CredentialHandler.getCredentials());
         String serializedData = mapper.writeValueAsString(requestDto);
         client.send(serializedData);
         String serverResponseString = client.receiveResponse();
         return mapper.readValue(serverResponseString, ServerResponseDto.class);
     }
-
 
     public ServerResponseDto showMy() throws IOException, InterruptedException {
         ClientDataDto clientData = new ClientDataDto("show_my");

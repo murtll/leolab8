@@ -1,5 +1,7 @@
 package lab7.client.Network;
 
+import lab7.client.Smth.CredentialHandler;
+
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;

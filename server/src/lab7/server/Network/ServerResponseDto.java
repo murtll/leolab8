@@ -1,7 +1,8 @@
 package lab7.server.Network;
 
-import lab7.server.Smth.Vehicle;
+import lab7.server.Entity.Vehicle;
 
+import javax.swing.*;
 import java.time.LocalDate;
 import java.util.Map;
 import java.util.Vector;
@@ -9,11 +10,10 @@ import java.util.Vector;
 public class ServerResponseDto {
     private final boolean ok;
     private String message;
-
     private Vector<Vehicle> vehicles;
-
     private int number;
-
+    private long id;
+    private int color;
     private Map<LocalDate, Long> groups;
 
     public ServerResponseDto() {
@@ -44,6 +44,12 @@ public class ServerResponseDto {
         this.number = number;
     }
 
+    public ServerResponseDto(boolean ok, long id, int color) {
+        this.ok = ok;
+        this.id = id;
+        this.color = color;
+    }
+
     public boolean isOk() {
         return ok;
     }
@@ -62,5 +68,13 @@ public class ServerResponseDto {
 
     public Map<LocalDate, Long> getGroups() {
         return groups;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public int getColor() {
+        return color;
     }
 }

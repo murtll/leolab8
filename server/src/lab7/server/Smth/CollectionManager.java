@@ -1,11 +1,12 @@
 package lab7.server.Smth;
 
+import lab7.server.Entity.FuelType;
+import lab7.server.Entity.Vehicle;
 import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.*;
-import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.Collectors;
 

@@ -55,7 +55,7 @@ public class DatagramServer {
     private void processPacket(DatagramPacket packet) {
         String data = new String(packet.getData(), 0, packet.getLength(), StandardCharsets.UTF_8);
 
-        String maskedData = data.replaceAll("(\"password\":\")(.*)\"", "$1***\"");
+        String maskedData = data.replaceAll("(\"password\":\")(\\w*)", "$1***");
         logger.info("Received packet from " + packet.getAddress() + ":" + packet.getPort() + ", payload " + maskedData);
 
         try {

@@ -2,12 +2,11 @@ package lab7.server.Commands;
 
 import lab7.server.Exceptions.EmptyResultSetException;
 import lab7.server.Network.ServerResponseDto;
-import lab7.server.Smth.AbstrCommand;
 import lab7.server.Smth.CollectionManager;
 
 
-import lab7.server.Smth.DatabaseManager;
-import lab7.server.Smth.Vehicle;
+import lab7.server.Db.DatabaseManager;
+import lab7.server.Entity.Vehicle;
 
 import java.sql.SQLException;
 

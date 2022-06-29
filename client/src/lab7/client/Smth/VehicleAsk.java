@@ -1,5 +1,10 @@
 package lab7.client.Smth;
 
+import lab7.client.Entity.Coordinates;
+import lab7.client.Entity.FuelType;
+import lab7.client.Entity.Vehicle;
+import lab7.client.Entity.VehicleType;
+import lab7.client.Exceptions.EmptyIO;
 import lab7.client.Exceptions.WrongFormat;
 
 import java.util.NoSuchElementException;
@@ -18,7 +23,7 @@ public class VehicleAsk {
         VehicleAsk.scanner = scanner;
     }
 
-    public Vehicle createVehicle() {
+    public static Vehicle createVehicle() {
         String name = null;
         while (name == null) {
             try {
